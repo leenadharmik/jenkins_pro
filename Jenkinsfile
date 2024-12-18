@@ -34,9 +34,7 @@ tools
         sh 'sudo scp -r /root/.jenkins/workspace/Assign-Multi-branch_master/target/LoginWebApp.war leena@172.31.38.237:/mnt/servers/apache-tomcat-9.0.98/webapps'
 	    }
     }
-    
-    }
-stage('start-tomcat')
+    stage('start-tomcat')
 	{
 		steps
 		{
