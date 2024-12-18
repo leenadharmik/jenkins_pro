@@ -40,7 +40,7 @@ tools
 		{
 			echo "Starting tomcat"
 			sh 'sudo cd /mnt/servers/apache-tomcat-9.0.98/bin/'
-			sh 'sudo ./statup.sh'
+			sh 'sudo ./startup.sh'
 		}
 		
 	}
