@@ -31,7 +31,7 @@ tools
     steps
     {
         echo "Deploying WAR to Slave3 machine"
-        sh 'sudo scp /target/LoginWebApp.war leena@172.31.38.237/mnt/servers/apache-tomcat-9.0.98/webapps'
+        sh 'sudo scp -r /root/.jenkins/workspace/Assign-Multi-branch_master/target/LoginWebApp.war leena@172.31.38.237/mnt/servers/apache-tomcat-9.0.98/webapps'
     }
     }
     
