@@ -15,7 +15,7 @@ tools
         {
             steps {
                 echo 'Pulling Code from GIT'
-                git credentialsId: 'git-1', url: 'https://github.com/leenadharmik/project.git'
+                git branch: 'dev', credentialsId: 'git-1', url: 'https://github.com/leenadharmik/jenkins_pro.git'
             }
         }
     stage('build-rar-master')
