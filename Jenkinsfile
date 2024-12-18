@@ -43,7 +43,7 @@ tools
 		steps
 		{
 			echo "Starting tomcat"
-			sh 'sudo cd /mnt/servers/apache-tomcat-9.0.98/bin && ./startup.sh'
+			sh 'cd /mnt/servers/apache-tomcat-9.0.98/bin && sudo ./startup.sh'
 		}
 		
 	}
