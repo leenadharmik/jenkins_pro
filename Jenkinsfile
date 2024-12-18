@@ -26,20 +26,20 @@ tools
         sh 'mvn clean install'
         }
     }
-    stage('Deploy-WAR-on-slave3')
+    stage('Deploy-WAR-on-slave2')
     {
 	
     steps
     {
-        echo "Deploying WAR to Slave3 machine"
-        sh 'sudo scp -r /root/.jenkins/workspace/Assign-Multi-branch_master/target/LoginWebApp.war leena@172.31.38.237:/mnt/servers/apache-tomcat-9.0.98/webapps'
-	    }
+        echo "Deploying WAR to Slave2 machine"
+        sh 'sudo scp -r /root/.jenkins/workspace/Assign-Multi-branch_master/target/LoginWebApp.war leena@172.31.46.11:/mnt/servers/apache-tomcat-9.0.98/webapps'
+    }
     }
     stage('start-tomcat')
 	{
 		agent
 		{
-			label 'slave3'
+			label 'slave2'
 		}
 		steps
 		{
