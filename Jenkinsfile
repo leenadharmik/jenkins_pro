@@ -36,6 +36,10 @@ tools
     }
     stage('start-tomcat')
 	{
+		agent
+		{
+			label 'slave3'
+		}
 		steps
 		{
 			echo "Starting tomcat"
