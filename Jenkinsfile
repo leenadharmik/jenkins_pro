@@ -5,27 +5,6 @@ pipeline {
         label 'built-in'
 	    
     }
-/*tools 
-{
-    maven 'My-Maven'
-}
-    stages 
-    {
-        stage('git-pull') 
-        {
-            steps {
-                echo 'Pulling Code from GIT'
-                git branch: 'dev', credentialsId: 'git-1', url: 'https://github.com/leenadharmik/jenkins_pro.git'
-            }
-        }
-    stage('build-rar-master')
-    {
-        steps
-        {
-        echo "Building rar file on Jenkins-Master"
-        sh 'mvn clean install'
-        }
-    }*/
 	stages
 	{
     stage('Deploy-WAR-on-slave1')
@@ -41,7 +20,7 @@ pipeline {
 	{
 		agent
 		{
-			label 'slave2'
+			label 'slave1'
 		}
 		steps
 		{
