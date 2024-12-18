@@ -2,7 +2,7 @@ pipeline {
     agent 
     {
         label 'built-in'
-	    customWorkspace '/mnt/multi-b/'
+	    
     }
 tools 
 {
